@@ -36,6 +36,8 @@
    `Authorization: Bearer <your_token_here>`  
 4. **Access Protected Routes** – e.g., `GET /api/tasks`
 
+**Note:** Passwords are securely hashed using **bcrypt** before storage.
+
 
 
 ## 📦 Running Locally (with Docker)
