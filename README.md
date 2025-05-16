@@ -1,85 +1,98 @@
-🌀 Syncro – Remote Team Productivity API
+# 🚀 Syncro – Remote Team Productivity API
 
-Syncro is a modern backend system designed for managing users and tasks in distributed teams. It showcases a clean, secure, and scalable Spring Boot microservices architecture, built with real-world DevOps practices in mind.
+**Syncro** is a Spring Boot-powered microservice backend built for modern remote teams. It helps you manage users and tasks securely, with full JWT-based authentication, role-based access, and clean REST APIs. Oh, and it's Dockerized too. 🐳
 
-🔧 Tech Stack
-Java 17, Spring Boot 3
 
-Spring Security + JWT
 
-PostgreSQL, Maven
+## ✨ Features
 
-Docker, Docker Compose
+- 🔐 **JWT Authentication** – Secure login, signup, and role-based access control (Spring Security + JWT)
+- 🧰 **Modular Microservice Design** – User and Task services for easy scalability
+- 🛡️ **Spring Security** – Protects your endpoints like a fortress
+- 🧠 **JPA + PostgreSQL** – Easy, clean data access with Hibernate and Postgres
+- 📦 **Dockerized** – Spin it up anywhere in seconds
+- 🚀 **CI/CD Ready** – Built for smooth deployments
 
-GitHub Actions (CI/CD)
 
-(Optional) Spring Cloud Gateway
 
-📦 Microservices
-👤 User Service
-Register and log in users
+## 🛠️ Tech Stack
 
-Role-based access control
+| Layer        | Technology               |
+|--------------|--------------------------|
+| Backend      | Spring Boot, Spring Security |
+| Auth         | JWT (JSON Web Tokens)    |
+| DB           | PostgreSQL + JPA (Hibernate) |
+| DevOps       | Docker, CI/CD            |
+| Testing      | JUnit, Postman           |
 
-Issues JWT tokens for authenticated access
 
-✅ Task Service
-Create, read, update, delete tasks
 
-Secures access using JWT
+## 🔑 Authentication Flow
 
-Ensures task ownership and authorization
+1. **Sign Up** – `POST /api/auth/register`  
+2. **Log In** – `POST /api/auth/login`  
+   ✅ Returns a **JWT Token**  
+3. **Use JWT** – Include in request header:  
+   `Authorization: Bearer <your_token_here>`  
+4. **Access Protected Routes** – e.g., `GET /api/tasks`
 
-🛡️ Security
-Passwords encrypted with BCrypt
 
-Stateless authentication using JWT
 
-Spring Security filters for protection
+## 📦 Running Locally (with Docker)
 
-🚀 Getting Started (Local)
-bash
-Copy code
-# Clone and navigate
-git clone https://github.com/your-username/syncro.git
-cd syncro
-
-# Build each service
-cd user-service && mvn clean install
-cd ../task-service && mvn clean install
-
-# Run everything with Docker
+```bash
+# Backend (Spring Boot + Postgres)
+cd backend
 docker-compose up --build
-localhost:8081 → User Service
+```
 
-localhost:8082 → Task Service
+Then visit: [http://localhost:8080](http://localhost:8080)
 
-📂 Project Structure
-sql
-Copy code
-syncro/
-├── user-service/
-├── task-service/
-├── docker-compose.yml
-└── README.md
-🧪 CI/CD
-Built with GitHub Actions to automate:
 
-Code build & test
 
-(Optional) Docker image builds
+## 📬 API Endpoints (Examples)
 
-(Optional) Deployments to Railway or AWS
+### 🔐 Auth
+- `POST /api/auth/register` — Sign up a new user  
+- `POST /api/auth/login` — Get JWT token
 
-🌱 Future Improvements
-OAuth2 login (Google, GitHub)
+### 👤 Users
+- `GET /api/users/me` — Get current user info (JWT required)  
+- `GET /api/users/` — Admin-only: List all users
 
-Spring Cloud Gateway routing
+### ✅ Tasks
+- `GET /api/tasks/` — List tasks for the current user  
+- `POST /api/tasks/` — Create a new task  
+- `DELETE /api/tasks/{id}` — Delete a task
 
-Frontend integration (Next.js or React)
 
-Notification & label system for tasks
 
-👋 About
-Built with ☕ & focus by Arvil.
-Feel free to fork, explore, or contribute!
+## 🧪 Testing JWT in Postman
+
+1. **Login** via `/api/auth/login` to get your JWT token.
+2. In **Postman**, go to the **Authorization** tab.
+3. Set Type to: `Bearer Token`
+4. Paste your token and test any secured endpoints!
+
+
+
+## 📸 Screenshots (Optional)
+
+> Add Postman screenshots, Docker logs, or your favorite DB UI here to show it in action!  
+> _(You can also include .gif walkthroughs for extra flair.)_
+
+
+
+## 🙋🏻‍♂️ About the Author
+
+Built with: 🌙 **Late nights** | 💻 **Love for clean code** | 🌐 **Belief in remote productivity**
+
+
+Have questions or want to connect?  
+Find me on [LinkedIn](https://www.linkedin.com/in/arvil-dey/) or contact me through my [Website](https://arvil-portfolio-swe.vercel.app/)!
+
+
+
+## 📃 License
+
+**MIT License** — Fork it, clone it, build on it, and make it your own!
