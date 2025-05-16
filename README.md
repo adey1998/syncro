@@ -1,4 +1,5 @@
 🌀 Syncro – Remote Team Productivity API
+
 Syncro is a modern backend system designed for managing users and tasks in distributed teams. It showcases a clean, secure, and scalable Spring Boot microservices architecture, built with real-world DevOps practices in mind.
 
 🔧 Tech Stack
