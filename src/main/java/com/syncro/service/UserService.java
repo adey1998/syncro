@@ -29,4 +29,12 @@ public class UserService {
     public Iterable<User> getAllUsers() {
         return userRepository.findAll();
     }
+
+    public boolean existsByEmail(String email) {
+        return userRepository.findByEmail(email).isPresent();
+    }
+
+    public Optional<User> findByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
 }
