@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: syncro-postgres
+    environment:
+      POSTGRES_USER: arvildey
+      POSTGRES_PASSWORD: Arvil1998#
+      POSTGRES_DB: syncrodb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: syncro-backend
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/syncrodb
+      SPRING_DATASOURCE_USERNAME: arvildey
+      SPRING_DATASOURCE_PASSWORD: Arvil1998#
+    ports:
+      - "8080:8080"
+    restart: always
+
+volumes:
+  pgdata:
