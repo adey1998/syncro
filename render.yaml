@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: syncro-api
+    env: docker
+    repo: https://github.com/adey1998/Syncro.git
+    branch: main
+    dockerfilePath: Dockerfile
+    region: oregon
+    plan: free
