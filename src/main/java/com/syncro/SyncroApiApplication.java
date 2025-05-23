@@ -8,6 +8,9 @@ public class SyncroApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SyncroApiApplication.class, args);
+
+		System.out.println("CI test run - " + System.currentTimeMillis());
+
 	}
 
 }
