@@ -11,7 +11,7 @@
 - 🛡️ **Spring Security** – Protects your endpoints like a fortress
 - 🧠 **JPA + PostgreSQL** – Easy, clean data access with Hibernate and Postgres
 - 📦 **Dockerized** – Spin it up anywhere in seconds
-- 🚀 **CI/CD Ready** – Built for smooth deployments
+- 🚀 **CI/CD Ready** – Built for smooth deployments using **GitHub Actions** for continuous integration and **Render** for continuous deployment
 
 
 
