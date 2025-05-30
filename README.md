@@ -80,8 +80,9 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 ## 📸 Screenshots (Optional)
 
-> Add Postman screenshots, Docker logs, or your favorite DB UI here to show it in action!  
-> _(You can also include .gif walkthroughs for extra flair.)_
+Full walkthrough, screenshots, and feature breakdown available at:
+
+🔗 [Syncro Project Page](https://arvil-portfolio-swe.vercel.app/projects/syncro)
 
 
 
