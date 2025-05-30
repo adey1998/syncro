@@ -78,7 +78,7 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 
 
-## 📸 Screenshots (Optional)
+## 📸 Screenshots
 
 Full walkthrough, screenshots, and feature breakdown available at:
 
