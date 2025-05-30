@@ -1,10 +1,10 @@
-# 🚀 Syncro – Remote Team Productivity API
+# Syncro – Remote Team Productivity API
 
-**Syncro** is a Spring Boot-powered microservice backend built for modern remote teams. It helps you manage users and tasks securely, with full JWT-based authentication, role-based access, and clean REST APIs. Oh, and it's Dockerized too. 🐳
+**Syncro** is a Spring Boot-powered microservice backend built for modern remote teams. It helps you manage users and tasks securely, with full JWT-based authentication, role-based access, and clean REST APIs. Oh, and it's Dockerized too! 🐳
 
 
 
-## ✨ Features
+## Features
 
 - 🔐 **JWT Authentication** – Secure login, signup, and role-based access control (Spring Security + JWT)
 - 🧰 **Modular Microservice Design** – User and Task services for easy scalability
@@ -15,7 +15,7 @@
 
 
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer        | Technology               |
 |--------------|--------------------------|
@@ -27,7 +27,7 @@
 
 
 
-## 🔑 Authentication Flow
+## Authentication Flow
 
 1. **Sign Up** – `POST /api/auth/register`  
 2. **Log In** – `POST /api/auth/login`  
@@ -40,7 +40,7 @@
 
 
 
-## 📦 Running Locally (with Docker)
+## Running Locally (with Docker)
 
 ```bash
 # Backend (Spring Boot + Postgres)
@@ -52,7 +52,7 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 
 
-## 📬 API Endpoints (Examples)
+## API Endpoints (Examples)
 
 ### 🔐 Auth
 - `POST /api/auth/register` — Sign up a new user  
@@ -69,7 +69,7 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 
 
-## 🧪 Testing JWT in Postman
+## Testing JWT in Postman
 
 1. **Login** via `/api/auth/login` to get your JWT token.
 2. In **Postman**, go to the **Authorization** tab.
@@ -78,7 +78,7 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 
 
-## 📸 Screenshots
+## Screenshots
 
 Full walkthrough, screenshots, and feature breakdown available at:
 
@@ -86,7 +86,7 @@ Full walkthrough, screenshots, and feature breakdown available at:
 
 
 
-## 🙋🏻‍♂️ About the Author
+## About the Author
 
 Built with: 🌙 **Late nights** | 💻 **Love for clean code** | 🌐 **Belief in remote productivity**
 
@@ -96,6 +96,6 @@ Find me on [LinkedIn](https://www.linkedin.com/in/arvil-dey/) or contact me thro
 
 
 
-## 📃 License
+## License
 
 **MIT License** — Fork it, clone it, build on it, and make it your own!
