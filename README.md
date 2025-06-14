@@ -82,7 +82,7 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 Full walkthrough, screenshots, and feature breakdown available at:
 
-🔗 [Syncro Project Page](https://arvil-portfolio-swe.vercel.app/projects/syncro)
+🔗 [Syncro Project Page](https://arvildey.com/projects/syncro)
 
 
 
