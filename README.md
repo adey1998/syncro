@@ -31,7 +31,7 @@
 
 1. **Sign Up** – `POST /api/auth/register`  
 2. **Log In** – `POST /api/auth/login`  
-   ✅ Returns a **JWT Token**  
+    -> Returns a **JWT Token**  
 3. **Use JWT** – Include in request header:  
    `Authorization: Bearer <your_token_here>`  
 4. **Access Protected Routes** – e.g., `GET /api/tasks`
