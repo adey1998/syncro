@@ -6,12 +6,12 @@
 
 ## Features
 
-- 🔐 **JWT Authentication** – Secure login, signup, and role-based access control (Spring Security + JWT)
-- 🧰 **Modular Microservice Design** – User and Task services for easy scalability
-- 🛡️ **Spring Security** – Protects your endpoints like a fortress
-- 🧠 **JPA + PostgreSQL** – Easy, clean data access with Hibernate and Postgres
-- 📦 **Dockerized** – Spin it up anywhere in seconds
-- 🚀 **CI/CD Ready** – Built for smooth deployments using **GitHub Actions** for continuous integration and **Render** for continuous deployment
+- **JWT Authentication** – Secure login, signup, and role-based access control (Spring Security + JWT)
+- **Modular Microservice Design** – User and Task services for easy scalability
+- **Spring Security** – Protects your endpoints like a fortress
+- **JPA + PostgreSQL** – Easy, clean data access with Hibernate and Postgres
+- **Dockerized** – Spin it up anywhere in seconds
+- **CI/CD Ready** – Built for smooth deployments using **GitHub Actions** for continuous integration and **Render** for continuous deployment
 
 
 
@@ -33,7 +33,7 @@
 2. **Log In** – `POST /api/auth/login`  
     -> Returns a **JWT Token**  
 3. **Use JWT** – Include in request header:  
-   `Authorization: Bearer <your_token_here>`  
+    -> `Authorization: Bearer <your_token_here>`  
 4. **Access Protected Routes** – e.g., `GET /api/tasks`
 
 **Note:** Passwords are securely hashed using **bcrypt** before storage.
@@ -54,15 +54,15 @@ Then visit: [http://localhost:8080](http://localhost:8080)
 
 ## API Endpoints (Examples)
 
-### 🔐 Auth
+### Auth
 - `POST /api/auth/register` — Sign up a new user  
 - `POST /api/auth/login` — Get JWT token
 
-### 👤 Users
+### Users
 - `GET /api/users/me` — Get current user info (JWT required)  
 - `GET /api/users/` — Admin-only: List all users
 
-### ✅ Tasks
+### Tasks
 - `GET /api/tasks/` — List tasks for the current user  
 - `POST /api/tasks/` — Create a new task  
 - `DELETE /api/tasks/{id}` — Delete a task
